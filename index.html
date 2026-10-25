@@ -194,7 +194,7 @@ input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;bac
 <div id="app-root">
 <header class="wrap top">
   <span class="mark" aria-hidden="true"></span>
-  <div><h1>Ngân Keychain</h1><p>Tải ảnh lên để xem móc khoá bạn sẽ nhận</p></div>
+  <div><h1>Kẹo Dẻo Nho</h1><p>Tải ảnh lên để xem móc khoá bạn sẽ nhận</p></div>
 </header>
 
 <main class="wrap app">
@@ -327,7 +327,7 @@ var ROOT=document.getElementById('app-root');
 var PRISTINE=ROOT?ROOT.outerHTML:'';
 var CSS_SRC=(document.getElementById('css')||{}).textContent||'';
 var APP_SRC=(document.getElementById('app')||{}).textContent||'';
-var TITLE=document.title||'Ngân Keychain';
+var TITLE=document.title||'Kẹo Dẻo Nho';
 var HOOKS=[];try{HOOKS=JSON.parse((document.getElementById('hooksData')||{}).textContent||'[]')||[]}catch(e){HOOKS=[]}
 var IMG={};
 HOOKS.forEach(function(h){var im=new Image();im.onload=function(){schedule()};im.src=h.src;IMG[h.id]=im});
@@ -714,7 +714,7 @@ function exportCard(){
   var top=150,prevH=760,detY=top+prevH+50,rowH=150,H=detY+60+rows*rowH+200;
   var c=mk(W,H),x=c.getContext('2d'),F='"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif',D='"Baloo 2","Be Vietnam Pro",system-ui,sans-serif';
   x.fillStyle='#FFFFFF';x.fillRect(0,0,W,H);
-  x.fillStyle='#5E9A4B';x.font='800 52px '+D;x.textBaseline='alphabetic';x.fillText('Ngân Keychain',72,96);
+  x.fillStyle='#5E9A4B';x.font='800 52px '+D;x.textBaseline='alphabetic';x.fillText('Kẹo Dẻo Nho',72,96);
   x.fillStyle='#69785F';x.font='500 26px '+F;x.fillText('Mẫu móc khoá của bạn',72,132);
   var dt=new Date(),ds=('0'+dt.getDate()).slice(-2)+'/'+('0'+(dt.getMonth()+1)).slice(-2)+'/'+dt.getFullYear();
   x.textAlign='right';x.fillText(ds,W-72,96);x.textAlign='left';
